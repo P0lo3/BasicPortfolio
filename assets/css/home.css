@@ -84,7 +84,7 @@ body {
 
 .topnav .navLinks a:hover {
     color: var(--secondary-color);
-    text-decoration: underline wavy var(--accent-color);
+    text-decoration: underline, wavy, var(--accent-color);
 }
 
 
