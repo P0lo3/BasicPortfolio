@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="../assets/css/home.css">
 </head>
 <body>
+    <button id="returnToTopBtn" class="returnToTopBtn">Top</button>
+    <nav class="topnav" id="myTopnav">
+        <div class="logo">
+            <a href="#home">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="hamburgerIcon" onclick="toggleMenu()" aria-label="Toggle navigation">
+            <i class="hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </i>
+        </div>
+        <div class="navLinks" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
     <main>
         <section class="section1">
             <div class="heroSection">
@@ -81,5 +102,6 @@
             <p class="Copyrigth">© Copyrigth 2025 | Name | All rights reserved.</p>
         </div>
     </footer>
+    <script src="home.js"></script>
 </body>
 </html>
