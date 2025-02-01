@@ -1,10 +1,9 @@
 :root {
+    --background-color: #f5f5f5;
     --primary-color: #DCE4C9;  /* Define your color */
-    --background-color:#F5F5dc;
     --secondary-color: #B6a28e;
-    --tertiary-color: #f5f5f5;
+    --tertiary-color:#F5F5dc;
     --accent-color: #E07B39;
-
     --text-light-color: #333;
     --text-dark-color: #eee;
 }
