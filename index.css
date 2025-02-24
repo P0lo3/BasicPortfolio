@@ -577,8 +577,46 @@ footer {
     justify-content: center;
 }
 
-.skillsHeader {
+.skillsPageHeader {
+    display: flex;
+    flex-direction: column;
     background-color: var(--section2);
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+
+.skillsHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--section2);
+    width: 80%
+}
+
+
+.skillsHeaderDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+    background-color: var(--section2);
+}
+
+.skillsHeader p {
+    font-size: 22px;
+}
+
+
+.skillsHeader img {
+    width: 20%;
+    border-color: var(--accent2);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 15%;
 }
 
 
