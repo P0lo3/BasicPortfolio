@@ -49,9 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Assign the function to the onclick event of the menu
+    // Add the event listener to the icon element
     var menuIcon = document.querySelector(".icon");
     if (menuIcon) {
         menuIcon.addEventListener("click", myFunction);
     }
     });
+  
