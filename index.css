@@ -547,17 +547,28 @@ footer {
 }
 
 .skillsPageHeader {
+<<<<<<< HEAD
     width: 100%;
     background-color: var(--section2);
     padding: 40px;
     display: flex;
     flex-direction: row;
+=======
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section2);
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+>>>>>>> 6d50b837a6904beb270e882033199c39e9b2fc11
 }
 
 .skillsHeader {
     display: flex;
     flex-direction: row;
     justify-content: center;
+<<<<<<< HEAD
     align-items: center;
     gap: 2rem;
     padding: 40px;
@@ -566,22 +577,37 @@ footer {
 .skillsHeader img {
     width: 40%;
 }
+=======
+    background-color: var(--section2);
+    width: 80%
+}
+
+>>>>>>> 6d50b837a6904beb270e882033199c39e9b2fc11
 
 .skillsHeaderDiv {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     align-items: center;
     gap: 2rem;
 }
 
 .skillsHeader h2 {
     font-size: 38px;
+=======
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+    background-color: var(--section2);
+>>>>>>> 6d50b837a6904beb270e882033199c39e9b2fc11
 }
 
 .skillsHeader p {
     font-size: 22px;
 }
 
+<<<<<<< HEAD
 .skillsPage {
     display: flex;
     flex-direction: column;
@@ -611,6 +637,15 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+=======
+
+.skillsHeader img {
+    width: 20%;
+    border-color: var(--accent2);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 15%;
+>>>>>>> 6d50b837a6904beb270e882033199c39e9b2fc11
 }
 
 
