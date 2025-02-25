@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="../index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/255f1426e6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
-<navbar class="navbar">
+<navbar id="myTopnav" class="topnav">
     <div>
-        <img src="../images/logo.png" alt="logo" class="logo">
+        <img src="./images/logo.png" alt="logo" class="logo">
     </div>
-    <div id="navbar">
-        <a class="active" href="../index.html">Home</a>
-        <a href="./myjourney.html">MyJourney</a>
-        <a href="./about.html">About</a>
-        <a href="./skills.html">Skills</a>
-    </div>
-    <div>
-        <a href="./contact.html">Contact</a>
+    <div class="navLinks">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="../index.html" class="active">Home</a>
+        <a href="./pages/myjourney.html">MyJourney</a>
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/skills.html">Skills</a>
+        <a href="./pages/contact.html">Contact</a>
     </div>
 </navbar>
 
@@ -43,7 +45,7 @@
             <img src="../images/profileTrans.png">
         </div>
     </section>
-    <section class="">
+    <section class="skillsPage">
         <div class="skillsSection">
             <h2>Technologies Learnt</h2>
             <div class="skillList">

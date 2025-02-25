@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
 // Initialize EmailJS with your user ID
 emailjs.init("lpOGiX8nFB5_DCf6m"); // Replace with your public key
@@ -34,3 +36,22 @@ const currentYear = new Date().getFullYear();
 
 document.getElementById("current-year").textContent = currentYear;
 console.log("currentYear", currentYear);
+
+document.addEventListener('DOMContentLoaded', function () {
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x) { // Check if the element exists
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    }
+
+    // Assign the function to the onclick event of the menu
+    var menuIcon = document.querySelector(".icon");
+    if (menuIcon) {
+        menuIcon.addEventListener("click", myFunction);
+    }
+    });

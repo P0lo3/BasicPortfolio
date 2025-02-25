@@ -40,6 +40,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 
@@ -51,7 +52,7 @@ body {
     color: var(--text);
 }
 
-.navbar {
+.topnav {
     position: sticky;
     display: flex;
     flex-direction: row;
@@ -66,10 +67,9 @@ body {
     padding-right: 10%;
 }
 
-.navbar a {
+.topnav a {
     float: left;
     display: block;
-    /* color: var(--primary-bg-text); */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -77,25 +77,32 @@ body {
     color: var(--nav-text);
 }
 
-.navbar div { 
+.topnav .icon {
+    display: none;
+}
+
+.topnav div { 
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
-.navbar img {
+.topnav img {
     height: 60px;
 }
 
-.navbar a:hover {
+.topnav a:hover {
     background-color: var(--color-coffeeCompDark);
-    color: var();
+    color: var(--nav-text);
     border-radius: 1rem;
     text-decoration: underline;
     text-decoration-color: var(--nav-text);
     text-decoration-thickness: 3px;
     text-underline-offset: 5px;
 }
+
+
+
 
 .heroSection {
     display: flex;
@@ -209,44 +216,6 @@ body {
 
 }
 
-.skillsSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-.skillsSection h2 {
-    padding: 20px;
-    font-size: 42px
-}
-
-
-.skillList {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 2rem;
-    padding: 20px;
-    width: 100%;
-
-}
-
-.skillIcons {
-    color: var(--accent1);
-    font-size: 52px;
-}
-
-.skillNames {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 18px;
-    text-transform: uppercase;
-
-}
 
 .contactSection {
     display: flex;
@@ -577,9 +546,330 @@ footer {
     justify-content: center;
 }
 
-.skillsHeader {
+.skillsPageHeader {
+    width: 100%;
     background-color: var(--section2);
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.skillsHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 40px;
+}
+
+.skillsHeader img {
+    width: 40%;
+}
+
+.skillsHeaderDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skillsHeader h2 {
+    font-size: 38px;
+}
+
+.skillsHeader p {
+    font-size: 22px;
+}
+
+.skillsPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.skillsSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillList {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 8rem;
+}
+
+.skillNames {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 
 
+
+
+@media screen and (max-width: 1168px) {
+    body {
+        width: 100%;
+    }
+
+    .heroSection h1 {
+        font-size: 42px;
+        padding-bottom: 0px;
+    }
+
+    .heroSection p {
+        padding: 0px;
+    }
+
+    .aboutContent a {
+        width: 30%;
+    }
+
+    .heading {
+        font-size: 42px;
+    }
+
+
+
+    .footerLogo img {
+        width: 60px;
+        height: 60px;
+        border-radius: 1rem;
+    }
+
+    .footerLogo {
+        width: 200px
+    }
+
+    .footerSection {
+        gap: 1rem;
+    }
+
+    .footerLinks h2 {
+        font-size: 18px;
+    }
+
+    .aboutSection {
+        gap: 3rem;
+
+    }
+
+    .aboutSection img {
+        width: 300px
+    }
+
+    .aboutJourneyCard {
+        width: 100%;
+    }
+
+    .journeyCardHead {
+        width: 40%;
+    }
+
+    .journeyCardSkills {
+        width: 100%;
+    }
+
+    .journeyCardSkills div div {
+        width: 100px;
+        height: 50px;
+    }
+
+
+}
+
+
+/* For small screens, hide the navigation items except for the hamburger icon */
+@media screen and (max-width: 900px) {
+    .topnav a:not(:first-child) {
+        display: none; /* Hide all links except the first one (hamburger) */
+    }
+
+    /* Make the hamburger icon appear */
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive div img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* When the 'responsive' class is added, display the nav items vertically */
+    .topnav.responsive {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Dark overlay effect */
+        z-index: 999; /* Ensure the menu is above other content */
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .topnav.responsive .navLinks {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        width: 100%;
+    }
+
+    .topnav.responsive .navLinks a {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border-top: solid 1px var(--nav-text);
+        border-bottom: solid 1px var(--nav-text);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .topnav.responsive a {
+        display: block; /* Make links block elements */
+        text-align: left; /* Align text to the left */
+        padding: 15px;
+        color: white; /* Change text color to white for contrast */
+    }
+
+    /* Close button positioned inside the overlay */
+    .topnav.responsive .icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px; /* Make the close icon larger */
+        color: white; /* Make close icon visible */
+    }
+
+    .body {
+        width: 100vw;
+        margin: 0;
+        overflow: 0;
+    }
+
+    .header {
+        
+    }
+
+    .heroSection {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .heroSection img {
+        width: 60%;
+    }
+
+    .heroContent h1 {
+        font-size: 32px;
+    }
+
+    .heroContent {
+        width: 80%;
+    }
+
+    .aboutSection {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .aboutSection img {
+        width: 60%;
+    }
+
+    .aboutContent {
+        width: 80%;
+        align-items: center;
+    }
+
+    .aboutContent .aboutBtn {
+        width: 60%;
+    }
+
+    .skillCardSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .skillSection {
+        width: 80%;
+        padding-bottom: 40px;
+    }
+
+    .skillList {
+        grid-template-columns: auto auto;
+        width: 80%;
+        gap: 1rem;
+    }
+
+    .skillNames {
+        font-size: 18px;
+    }
+
+    .contactSection {
+        width: 100%;
+    }
+
+    .contactHeader h2 {
+        font-size: 30px;
+        text-align: center;;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .footerSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footerContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerContact h2 {
+        text-align: center;
+    }
+
+    .footerContact div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footerContact p {
+        text-align: center;
+        padding:10px;
+    }
+
+    .footerCopyRight p {
+        font-size: 10px;
+    }
+
+    .footerCopyRight div i {
+        font-size: 12px;
+    }
+}
