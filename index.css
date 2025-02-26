@@ -29,7 +29,7 @@
 
 body {
     margin: 0;
-    font-size: 28px;
+    /* font-size: 28px; */
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--section1);
     color: var(--text);
@@ -98,7 +98,7 @@ body {
 }
 
 .heroSection img {
-    width: 20%;
+    width: 30%;
     border-color: var(--accent2);
     border-width: 5px;
     border-style: solid;
@@ -156,6 +156,7 @@ body {
 }
 
 .aboutSection img {
+    width: 300px;
     border-radius: 2rem;
     box-shadow: 2px 0px 5px 0px rgb(3, 3, 3, 0.5);
 }
@@ -173,10 +174,6 @@ body {
 
 .aboutContent p {
     font-size: 22px;
-}
-
-.aboutSection img {
-    width: 20%;
 }
 
 .aboutBtn {
@@ -293,6 +290,74 @@ body {
     padding: 16px;
 }
 
+.aboutPageHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--section2);
+}
+
+.aboutPageHeroSection {
+    overflow: auto;
+    max-width: 800px;
+}
+
+.aboutPageHeroSection img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 2rem;
+    box-shadow: 2px 0px 5px 0px rgb(3, 3, 3, 0.5);
+    display: block;
+}
+
+.aboutPageHeroImage {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+}
+
+.aboutPageHeroContent p {
+    font-size: 22px;
+    padding-top: 20px;
+
+}
+
+.aboutPageSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--section1);
+    gap: 3rem;
+}
+
+.skillCardSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.skillsSection h2 {
+    font-size: 42px;
+}
+
+
 footer {
     background-color: var(--nav-background);
     color: var(--nav-text);
@@ -303,6 +368,7 @@ footer {
     justify-content: center;
     gap: 3rem;
 }
+
 
 .footerSection {
     display: flex;
@@ -335,15 +401,16 @@ footer {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    gap: 1rem;
 }
 
 .footerLinks li {
     list-style-type: none;
+    padding-bottom: 10px;
 }
 
 .footerLinks h2 {
-    color: var();
-    font-size: 22px;
+    
 }
 
 .footerLinks a {
@@ -366,9 +433,9 @@ footer {
 .footerContact {
     display: flex;
     flex-direction: column;
-    width: 300px
-    /* justify-content: center; */
-    /* align-items: center; */
+    width: 300px;
+    align-items: center;
+
 }
 
 .footerContact div {
@@ -380,9 +447,7 @@ footer {
 }
 
 .footerContact h2 {
-    color: var();
-    font-size: 22px;
-    padding-bottom: 20px;
+    font-size: 18px;
 
 }
 
@@ -398,7 +463,7 @@ footer {
 
 .footerFollowMe h2 {
     color: var();
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .footerCopyRight {
@@ -408,7 +473,7 @@ footer {
     align-items: center;
     gap: 1rem;
     color: var();
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .heading {
@@ -442,32 +507,36 @@ footer {
     font-size: 42px;
 }
 
-.aboutJourneyCard {
+.aboutPageCard {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
-.journeyCardHead {
+.aboutPageCard div h6 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.aboutPageCardHead {
     display: flex;
     flex-direction: column;
     padding-right: 1rem;
-    gap: 1rem;
 }
 
-.journeyCardHead h4 {
+.aboutPageCardHead h4 {
     font-size: 22px;
     padding: 10px;
 }
 
-.journeyCardHead p {
+.aboutPageCardHead p {
     font-size: 18px;
     padding-left: 10px;
 }
 
-.journeyCardDate {
+.aboutPageCardDate {
     display: flex;
     align-items: center;
     color: var(--accent2);
@@ -478,23 +547,23 @@ footer {
 
 }
 
-.journeyCardContent {
+.aboutPageCardContent {
     font-size: 18px;
     padding-left: 1rem;
 }
 
-.journeyCardGrid div {
+.aboutPageCardGrid div {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
     padding: 10px;
 }
 
-.journeyCardGrid div div {
+.aboutPageCardGrid div div {
     display: flex;
     border: solid 2px;
     height: 40px;
-    font-size: 12px;
+    font-size: 10px;
     border-radius: 2rem;
     text-align: center;
     align-items: center;
@@ -502,29 +571,29 @@ footer {
     color: var(--accent1)
 }
 
-.journeyCardSkills {
+.aboutPageCardSkills {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.journeyCardSkills div {
+.aboutPageCardSkills div {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 5px;
     padding: 10px;
 }
 
-.journeyCardSkills div div {
+.aboutPageCardSkills div div {
     display: flex;
     border: solid 2px;
     height: 40px;
-    font-size: 12px;
+    font-size: 10px;
     border-radius: 1rem;
     text-align: center;
     align-items: center;
     padding: 1rem;
-    width: 150px;
+    width: 80px;
     color: var(--accent1);
     justify-content: center;
 }
@@ -544,6 +613,8 @@ footer {
     align-items: center;
     gap: 2rem;
     padding: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .skillsHeader img {
@@ -573,13 +644,26 @@ footer {
     padding: 40px;
 }
 
-.skillsSection {
-    width: 100%;
+.skillsPageSection {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
+}
+
+.skillsPageList {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 8rem;
+}
+
+.skillPageNames {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .skillList {
@@ -594,6 +678,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    font-size: 28px;
 }
 
 
@@ -744,8 +829,33 @@ footer {
         overflow: 0;
     }
 
-    .header {
+    .heading {
+        height: 100px;
+    }
+
+    .heading h1 {
+        font-size: 32px;
         
+    }
+
+    .hobbiesPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hobbiesSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 3rem;
+    }
+
+    .hobbiesSection img {
+        width: 80%;
     }
 
     .heroSection {
@@ -783,18 +893,120 @@ footer {
     }
 
     .aboutContent .aboutBtn {
-        width: 60%;
+        width: 80%;
+    }
+
+    .aboutPageHero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutPageHeroSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;;
+    }
+
+    .aboutPageHeroImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0
+    }
+
+    .aboutPageHeroImage img {
+        width: 250px;
+        margin: 0;
+ 
+    }
+
+    .aboutPageSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutPageCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        border-bottom: solid 2px var(--accent1);
+        padding-bottom: 20px;
+
+    }
+
+    .aboutPageCardHead {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 18px;
+    }
+
+    .aboutPageCardHead h4 {
+        font-size: 20px;
+    }
+
+    .aboutPageCardHead div h6 {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .aboutPageCardHead p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .aboutPageCardDate {
+        border-left: none;
+        border-right: none;
+        height: 20px;
+    }
+
+    .aboutPageCardDate h6 {
+        font-size: 18px;
+    }
+
+    .aboutPageCardContent {
+        width: 90%;
+        padding: 0;
+        font-size: 16px;
+        
+    }
+
+    .aboutPageCardSkills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutPageCardGrid div {
+        display: grid;
+        grid-template-columns: auto auto;;
+        gap: 1rem;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .skillCardSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-top: 40px;
         padding-bottom: 40px;
     }
 
-    .skillSection {
-        width: 80%;
-        padding-bottom: 40px;
-    }
 
     .skillList {
         grid-template-columns: auto auto;
@@ -806,8 +1018,46 @@ footer {
         font-size: 18px;
     }
 
+    .skillsPageHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .skillsHeader {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .skillsHeader {
+        padding: 0;
+    }
+
+    .skillsHeaderDiv h2 {
+        font-size: 32px;
+    }
+
+    .skillsHeaderDiv p {
+        font-size: 18px;
+    }
+
+    .skillsPageList {
+        grid-template-columns: auto auto;
+        gap: 2rem;
+    }
+
+    .skillsHeader img {
+        width: 100%;
+    }
+
     .contactSection {
         width: 100%;
+    }
+
+    .formInput {
+        gap: 1rem;
     }
 
     .contactHeader h2 {
@@ -855,4 +1105,6 @@ footer {
     .footerCopyRight div i {
         font-size: 12px;
     }
+
+
 }
