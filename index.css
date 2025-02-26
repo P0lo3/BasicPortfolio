@@ -115,7 +115,6 @@ body {
 
 .heroContent h1 {
     font-size: 52px;
-    color: var()
 }
 
 .heroContent h1 span {
@@ -246,7 +245,7 @@ body {
 .formInput input {
     width: 100%;
     padding: 12px;
-    border: 1px solid var();
+    border: 1px solid;
     border-radius: 1rem;
     background-color: var(--section1);
     color: var(--text);
@@ -267,7 +266,6 @@ body {
 
 .contactForm form button {
     background-color: var(--accent2);
-    color: var();
     width: 50%;
     text-align: center;
     border-radius: 2rem;
@@ -462,7 +460,6 @@ footer {
 }
 
 .footerFollowMe h2 {
-    color: var();
     font-size: 18px;
 }
 
@@ -472,7 +469,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    color: var();
     font-size: 16px;
 }
 
